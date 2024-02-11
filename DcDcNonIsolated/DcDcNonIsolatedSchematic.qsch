@@ -18,7 +18,7 @@
       «ellipse (-25,55) (25,105) 0 0 0 0x1000000 0x1000000 -1 -1»
       «ellipse (-25,-105) (25,-55) 0 0 0 0x1000000 0x1000000 -1 -1»
       «text (100,200) 1 7 0 0x1000000 -1 -1 "S1"»
-      «text (-300,850) 1 7 0 0x1000000 -1 -1 "SWMOD1"»
+      «text (-250,550) 1 7 0 0x1000000 -1 -1 "SWMOD1"»
       «pin (0,200) (0,0) 1 0 0 0x0 -1 "1"»
       «pin (0,-200) (0,0) 1 0 0 0x0 -1 "2"»
       «pin (-200,100) (0,0) 1 0 0 0x0 -1 "+"»
@@ -42,7 +42,7 @@
       «rect (-25,-73) (25,-77) 0 0 0 0x1000000 0x3000000 -1 0 -1»
       «ellipse (-130,130) (130,-130) 0 0 0 0x1000000 0x1000000 -1 -1»
       «text (100,150) 1 7 0 0x1000000 -1 -1 "V1"»
-      «text (0,1050) 1 7 0 0x1000000 -1 -1 "PULSE vGoff vGon 0 1e-6 1e-6 tPeriod*duty tPeriod"»
+      «text (-6050,150) 1 7 0 0x1000000 -1 -1 "PULSE vGon vGoff 0 1e-6 1e-6 tPeriod*duty tPeriod"»
       «pin (0,200) (0,0) 1 0 0 0x0 -1 "+"»
       «pin (0,-200) (0,0) 1 0 0 0x0 -1 "-"»
     »
@@ -66,7 +66,7 @@
       «ellipse (-25,55) (25,105) 0 0 0 0x1000000 0x1000000 -1 -1»
       «ellipse (-25,-105) (25,-55) 0 0 0 0x1000000 0x1000000 -1 -1»
       «text (100,200) 1 7 0 0x1000000 -1 -1 "S2"»
-      «text (100,-200) 1 7 0 0x1000000 -1 -1 "SWMOD1"»
+      «text (-450,-1550) 1 7 0 0x1000000 -1 -1 "SWMOD1"»
       «pin (0,200) (0,0) 1 0 0 0x0 -1 "1"»
       «pin (0,-200) (0,0) 1 0 0 0x0 -1 "2"»
       «pin (-200,100) (0,0) 1 0 0 0x0 -1 "+"»
@@ -99,7 +99,7 @@
       «line (0,-200) (0,-180) 0 0 0x1000000 -1 -1»
       «coil (-80,180) (80,-180) 0 0 0 0x1000000 -1 -1»
       «text (80,0) 1 110 0 0x1000000 -1 -1 "L1"»
-      «text (-80,0) 1 109 0 0x1000000 -1 -1 "100e-6"»
+      «text (-80,0) 1 109 0 0x1000000 -1 -1 "400e-6"»
       «pin (0,200) (0,0) 1 0 0 0x0 -1 "1"»
       «pin (0,-200) (0,0) 1 0 0 0x0 -1 "2"»
     »
@@ -114,7 +114,7 @@
       «rect (-130,-40) (130,-30) 0 0 0 0x1000000 0x3000000 -1 0 -1»
       «rect (-130,30) (130,40) 0 0 0 0x1000000 0x3000000 -1 0 -1»
       «text (100,150) 1 7 0 0x1000000 -1 -1 "C1"»
-      «text (100,-150) 1 7 0 0x1000000 -1 -1 "1000µ"»
+      «text (100,-150) 1 7 0 0x1000000 -1 -1 "10µ"»
       «pin (0,200) (0,0) 1 0 0 0x0 -1 "+"»
       «pin (0,-200) (0,0) 1 0 0 0x0 -1 "-"»
     »
@@ -136,7 +136,7 @@
       «rect (-25,-73) (25,-77) 0 0 0 0x1000000 0x3000000 -1 0 -1»
       «ellipse (-130,130) (130,-130) 0 0 0 0x1000000 0x1000000 -1 -1»
       «text (100,150) 1 7 0 0x1000000 -1 -1 "V2"»
-      «text (0,-1100) 1 7 0 0x1000000 -1 -1 "PULSE vGon vGoff 0 1e-6 1e-6 tPeriod*(duty) tPeriod"»
+      «text (-5700,-100) 1 7 0 0x1000000 -1 -1 "PULSE vGon vGoff tPeriod/2 1e-6 1e-6 tPeriod*duty tPeriod "»
       «pin (0,200) (0,0) 1 0 0 0x0 -1 "+"»
       «pin (0,-200) (0,0) 1 0 0 0x0 -1 "-"»
     »
@@ -152,7 +152,7 @@
       «line (0,-200) (0,-70) 0 0 0x1000000 -1 -1»
       «triangle (0,80) (100,-70) (-100,-70) 0 0 0x1000000 0x2000000 -1 -1»
       «text (100,200) 1 7 0 0x1000000 -1 -1 "D2"»
-      «text (100,-200) 1 7 0 0x1000000 -1 -1 "RON=0.01 "»
+      «text (100,-250) 1 7 0 0x1000000 -1 -1 " IdealDiode"»
       «pin (0,-200) (0,0) 1 0 0 0x0 -1 "A"»
       «pin (0,200) (0,0) 1 0 0 0x0 -1 "K"»
     »
@@ -168,7 +168,7 @@
       «line (0,-200) (0,-70) 0 0 0x1000000 -1 -1»
       «triangle (0,80) (100,-70) (-100,-70) 0 0 0x1000000 0x2000000 -1 -1»
       «text (100,200) 1 7 0 0x1000000 -1 -1 "D3"»
-      «text (100,-200) 1 7 0 0x1000000 -1 -1 "RON=0.01 "»
+      «text (450,-50) 1 7 0 0x1000000 -1 -1 "IdealDiode"»
       «pin (0,-200) (0,0) 1 0 0 0x0 -1 "A"»
       «pin (0,200) (0,0) 1 0 0 0x0 -1 "K"»
     »
@@ -267,7 +267,7 @@
   «wire (-1600,-1100) (-1200,-1100) "GND"»
   «wire (-1600,100) (-1200,100) "GND"»
   «wire (500,-300) (800,-300) "N07"»
-  «text (-2950,2750) 1 7 0 0x1000000 -1 -1 "ï»¿//Ctrl+M for a new line\n//A semicolon(;), a double slash(//), or a dollar sign2($) \n//can be used to introduce a comment in the middle of a line. \n//Additionally, any line that starts with an asterisk(*) or pound \n//sign(#) is understood as a comment\n.param vDc=100\n.param fSw = 10e3 \n.param vGon = 5\n.param vGoff = -5\n.param tPeriod = 1/fSw\n.param duty = 0.3 \n.model SWMOD1 SW(Ron=0.001 Roff=1Meg Vt=0 Vh=-1) \n.param pOut=1e3\n.param vOut=vDc*duty \n.param rLoad=vOut^2/pOut  \n.tran 100m \n.ic C1=vOut"»
-  «text (-2800,-2850) 1 7 0 0x1000000 -1 -1 "ï»¿//Plot statements\n.plot I(L1), \n.plot V(n05)"»
+  «text (-2950,2750) 1 7 0 0x1000000 -1 -1 "ï»¿//Ctrl+M for a new line\n.param vDc=100\n.param fSw = 10e3 \n.param vGon = 5\n.param vGoff = -5\n.param tPeriod = 1/fSw\n.param duty = 0.5 \n.model SWMOD1 SW(Ron=0.001 Roff=1Meg Vt=0 Vh=-1) \n.param pOut=1e3\n.param vOut=vDc*duty \n.param rLoad=vOut^2/pOut  \n.tran 100m \n.ic V(n05)=vOut I(L1)=23\n.model IdealDiode D(RON=0.01 ROFF=1e6)"»
+  «text (-2800,-2850) 1 7 0 0x1000000 -1 -1 "ï»¿//Plot statements\n.plot I(L1) \n.plot V(n05), V(n02)"»
 »
 
