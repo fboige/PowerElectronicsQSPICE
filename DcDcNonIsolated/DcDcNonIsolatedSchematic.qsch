@@ -42,7 +42,8 @@
       «rect (-25,-73) (25,-77) 0 0 0 0x1000000 0x3000000 -1 0 -1»
       «ellipse (-130,130) (130,-130) 0 0 0 0x1000000 0x1000000 -1 -1»
       «text (100,150) 1 7 0 0x1000000 -1 -1 "V1"»
-      «text (-6050,150) 1 7 0 0x1000000 -1 -1 "PULSE vGon vGoff 0 1e-6 1e-6 tPeriod*duty tPeriod"»
+      «text (-6050,150) 1 7 0 0x1000000 -1 -1 "PULSE vGoff vGon 0 1e-6 1e-6 tPeriod*duty tPeriod"»
+      «text (-300,150) 1 7 0 0x1000000 -1 -1 ""»
       «pin (0,200) (0,0) 1 0 0 0x0 -1 "+"»
       «pin (0,-200) (0,0) 1 0 0 0x0 -1 "-"»
     »
@@ -136,7 +137,7 @@
       «rect (-25,-73) (25,-77) 0 0 0 0x1000000 0x3000000 -1 0 -1»
       «ellipse (-130,130) (130,-130) 0 0 0 0x1000000 0x1000000 -1 -1»
       «text (100,150) 1 7 0 0x1000000 -1 -1 "V2"»
-      «text (-5700,-100) 1 7 0 0x1000000 -1 -1 "PULSE vGon vGoff tPeriod/2 1e-6 1e-6 tPeriod*duty tPeriod "»
+      «text (-5700,-100) 1 7 0 0x1000000 -1 -1 "PULSE vGon vGoff 0 1e-6 1e-6 tPeriod*duty tPeriod "»
       «pin (0,200) (0,0) 1 0 0 0x0 -1 "+"»
       «pin (0,-200) (0,0) 1 0 0 0x0 -1 "-"»
     »
@@ -267,7 +268,7 @@
   «wire (-1600,-1100) (-1200,-1100) "GND"»
   «wire (-1600,100) (-1200,100) "GND"»
   «wire (500,-300) (800,-300) "N07"»
-  «text (-2950,2750) 1 7 0 0x1000000 -1 -1 "ï»¿//Ctrl+M for a new line\n.param vDc=100\n.param fSw = 10e3 \n.param vGon = 5\n.param vGoff = -5\n.param tPeriod = 1/fSw\n.param duty = 0.5 \n.model SWMOD1 SW(Ron=0.001 Roff=1Meg Vt=0 Vh=-1) \n.param pOut=1e3\n.param vOut=vDc*duty \n.param rLoad=vOut^2/pOut  \n.tran 100m \n.ic V(n05)=vOut I(L1)=23\n.model IdealDiode D(RON=0.01 ROFF=1e6)"»
+  «text (-2950,2750) 1 7 0 0x1000000 -1 -1 "ï»¿//Ctrl+M for a new line\n.param vDc=100\n.param fSw = 10e3 \n.param vGon = 5\n.param vGoff = -5\n.param tPeriod = 1/fSw\n.param duty = 0.3\n.model SWMOD1 SW(Ron=0.001 Roff=1Meg Vt=0 Vh=-1) \n.param pOut=1e3\n.param vOut=vDc*duty \n.param rLoad=vOut^2/pOut  \n.tran 100m \n.ic V(n05)=vOut I(L1)=23\n.model IdealDiode D(RON=0.01 ROFF=1e6)"»
   «text (-2800,-2850) 1 7 0 0x1000000 -1 -1 "ï»¿//Plot statements\n.plot I(L1) \n.plot V(n05), V(n02)"»
 »
 
